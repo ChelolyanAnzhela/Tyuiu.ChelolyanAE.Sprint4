@@ -11,7 +11,7 @@ namespace Tyuiu.ChelolyanAE.Sprint4.Task5.V11.Lib
             {
                 for (int j = 0; j < columns; j++)
                 {
-                    if (matrix[i, j] >= 0)
+                    if (matrix[i, j] > 0)
                     {
                         matrix[i, j] = 1;
                     }
