@@ -6,15 +6,9 @@ namespace Tyuiu.ChelolyanAE.Sprint4.Task6.V30.Lib
     {
         public string[] Calculate(string[] array)
         {
-             int count = 0;
-            foreach (string item in array)
-            {
-                if (item.Length > 5)
-                {
-                    count++;
-                }
-            }
-            return count.Length;
+            string[] mas = Array.FindAll(array, name => name.Length > 5);
+            return mas;
+            
         }
     }
 }

@@ -8,9 +8,10 @@ namespace Tyuiu.ChelolyanAE.Sprint4.Task6.V30.Test
         public void ValidCalc()
         {
             DataService ds = new DataService();
-            string[] array= new string[6] { "Береза", "Дуб", "Сосна", "Пихта", "Осина", "Клён" };
-            int res = ds.Calculate(array);
-            int wait =
+            var name= new string[] { "Береза", "Дуб", "Сосна", "Пихта", "Осина", "Клён" };
+            string[] res = ds.Calculate(name);
+            string[] wait = { "Береза" };
+            CollectionAssert.AreEqual(wait, res);
         }
     }
 }
